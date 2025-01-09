@@ -1,0 +1,157 @@
+/*
+
+Xilinx Vivado v2017.4 (64-bit) [Major: 2017, Minor: 4]
+SW Build: 2086221 on Fri Dec 15 20:55:39 MST 2017
+IP Build: 2085800 on Fri Dec 15 22:25:07 MST 2017
+
+Process ID: 30348
+License: Customer
+
+Current time: 	Thu Jan 09 15:53:32 GMT+08:00 2025
+Time zone: 	GMT+08:00 (GMT+08:00)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 32
+
+Screen size: 1707x1067
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 254 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre/bin/java.exe
+
+User name: 	Alessandro Paschen
+User home directory: C:/Users/Alessandro Paschen
+User working directory: C:/Users/Alessandro Paschen/Documents/git_repo/SUSTech_2024_autumn_Digital_Logic_project/project_final
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.4
+RDI_DATADIR: C:/Xilinx/Vivado/2017.4/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.4/bin
+
+Vivado preferences file location: C:/Users/Alessandro Paschen/AppData/Roaming/Xilinx/Vivado/2017.4/vivado.xml
+Vivado preferences directory: C:/Users/Alessandro Paschen/AppData/Roaming/Xilinx/Vivado/2017.4/
+Vivado layouts directory: C:/Users/Alessandro Paschen/AppData/Roaming/Xilinx/Vivado/2017.4/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2017.4/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Alessandro Paschen/Documents/git_repo/SUSTech_2024_autumn_Digital_Logic_project/project_final/vivado.log
+Vivado journal file location: 	C:/Users/Alessandro Paschen/Documents/git_repo/SUSTech_2024_autumn_Digital_Logic_project/project_final/vivado.jou
+Engine tmp dir: 	C:/Users/Alessandro Paschen/Documents/git_repo/SUSTech_2024_autumn_Digital_Logic_project/project_final/.Xil/Vivado-30348-MSI
+
+GUI allocated memory:	278 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 629 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\Alessandro Paschen\Documents\git_repo\SUSTech_2024_autumn_Digital_Logic_project\project_final\project_final.xpr. Version: Vivado v2017.4 
+// bs (cj):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 50 MB (+49865kb) [00:00:04]
+// [Engine Memory]: 533 MB (+407218kb) [00:00:04]
+// [GUI Memory]: 62 MB (+10508kb) [00:00:05]
+// [GUI Memory]: 92 MB (+28014kb) [00:00:05]
+// [Engine Memory]: 612 MB (+54925kb) [00:00:05]
+// [GUI Memory]: 103 MB (+6133kb) [00:00:06]
+// Tcl Message: open_project {C:/Users/Alessandro Paschen/Documents/git_repo/SUSTech_2024_autumn_Digital_Logic_project/project_final/project_final.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/Alessandro Paschen/Documents/git_repo/SUSTech_2024_autumn_Digital_Logic_project/project_final' INFO: [Project 1-313] Project file moved from 'C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'. 
+// Project name: project_final; location: C:/Users/Alessandro Paschen/Documents/git_repo/SUSTech_2024_autumn_Digital_Logic_project/project_final; part: xc7a35tcsg324-1
+dismissDialog("Open Project"); // bs (cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 634 MB. GUI used memory: 43 MB. Current time: 1/9/25 3:53:33 PM GMT+08:00
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v)]", 2); // B (D, cj)
+// [Engine Memory]: 648 MB (+5987kb) [00:22:33]
+// Elapsed time: 1342 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), mode0 : mode (mode.v)]", 13, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), mode0 : mode (mode.v)]", 13, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), mode0 : mode (mode.v)]", 13, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+selectCodeEditor("mode.v", 98, 374); // cd (w, cj)
+typeControlKey((HResource) null, "mode.v", 'c'); // cd (w, cj)
+// Elapsed time: 29 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), show_number0 : show_number (show_number.v)]", 19, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), show_number0 : show_number (show_number.v)]", 19, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), show_number0 : show_number (show_number.v)]", 19, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), show_number0 : show_number (show_number.v)]", 19, false); // B (D, cj)
+selectCodeEditor("show_number.v", 62, 274); // cd (w, cj)
+selectCodeEditor("show_number.v", 69, 273); // cd (w, cj)
+selectCodeEditor("show_number.v", 66, 272); // cd (w, cj)
+typeControlKey((HResource) null, "show_number.v", 'c'); // cd (w, cj)
+// Elapsed time: 33 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), data_select0 : data_select (data_select.v)]", 18, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), clock0 : clock (clock.v)]", 17, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), data_select0 : data_select (data_select.v)]", 18, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), data_select0 : data_select (data_select.v)]", 18, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectCodeEditor("data_select.v", 161, 272); // cd (w, cj)
+typeControlKey((HResource) null, "data_select.v", 'c'); // cd (w, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 657 MB. GUI used memory: 46 MB. Current time: 1/9/25 4:19:25 PM GMT+08:00
+// Elapsed time: 133 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), gesture_control_on0 : gesture_control_on (gesture_control.v)]", 16, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), clock0 : clock (clock.v)]", 17, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), clock0 : clock (clock.v)]", 17, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), clock0 : clock (clock.v)]", 17, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectCodeEditor("clock.v", 71, 148); // cd (w, cj)
+selectCodeEditor("clock.v", 253, 161); // cd (w, cj)
+selectCodeEditor("clock.v", 298, 154); // cd (w, cj)
+selectCodeEditor("clock.v", 79, 142); // cd (w, cj)
+selectCodeEditor("clock.v", 76, 144, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("clock.v", 290, 142); // cd (w, cj)
+selectCodeEditor("clock.v", 282, 145); // cd (w, cj)
+selectCodeEditor("clock.v", 185, 180); // cd (w, cj)
+selectCodeEditor("clock.v", 73, 166); // cd (w, cj)
+selectCodeEditor("clock.v", 219, 161); // cd (w, cj)
+selectCodeEditor("clock.v", 70, 143); // cd (w, cj)
+selectCodeEditor("clock.v", 215, 152); // cd (w, cj)
+selectCodeEditor("clock.v", 193, 147); // cd (w, cj)
+selectCodeEditor("clock.v", 121, 354); // cd (w, cj)
+typeControlKey((HResource) null, "clock.v", 'c'); // cd (w, cj)
+// Elapsed time: 18 seconds
+selectCodeEditor("clock.v", 70, 127); // cd (w, cj)
+selectCodeEditor("clock.v", 32, 115); // cd (w, cj)
+selectCodeEditor("clock.v", 33, 119, false, true, false, false, true); // cd (w, cj) - Control Key - Double Click
+selectCodeEditor("clock.v", 50, 154); // cd (w, cj)
+selectCodeEditor("clock.v", 35, 115, false, true, false, false, false); // cd (w, cj) - Control Key
+typeControlKey((HResource) null, "clock.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "clock.v", 'c'); // cd (w, cj)
+// Elapsed time: 424 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), reminder0 : reminder (reminder.v)]", 22, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), reminder0 : reminder (reminder.v)]", 22, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), reminder0 : reminder (reminder.v)]", 22, false); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), three_Counter0 : three_Counter (three_Counter.v)]", 24); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), three_return_Counter0 : three_return_Counter (three_return_Counter.v)]", 26); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), three_Counter0 : three_Counter (three_Counter.v), c2 : Counter (Counter.v)]", 25, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), three_Counter0 : three_Counter (three_Counter.v), c2 : Counter (Counter.v)]", 25, false, false, false, false, false, true); // B (D, cj) - Double Click
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), clean_mode_counter0 : clean_mode_counter (clean_mode_counter.v)]", 23); // B (D, cj)
+// Elapsed time: 149 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), three_Counter0 : three_Counter (three_Counter.v), c2 : Counter (Counter.v)]", 26, false); // B (D, cj)
+selectCodeEditor("Counter.v", 65, 351); // cd (w, cj)
+selectCodeEditor("Counter.v", 2, 118); // cd (w, cj)
+typeControlKey((HResource) null, "Counter.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "Counter.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "Counter.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "Counter.v", 'c'); // cd (w, cj)
+// Elapsed time: 152 seconds
+selectCodeEditor("Counter.v", 166, 258); // cd (w, cj)
+selectCodeEditor("Counter.v", 163, 98); // cd (w, cj)

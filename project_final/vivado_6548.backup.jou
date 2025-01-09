@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Jan  9 15:12:55 2025
+# Process ID: 6548
+# Current directory: C:/Users/Alessandro Paschen/Downloads/SUSTech_2024_autumn_Digital_Logic_project/project_final
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20416 C:\Users\Alessandro Paschen\Downloads\SUSTech_2024_autumn_Digital_Logic_project\project_final\project_final.xpr
+# Log file: C:/Users/Alessandro Paschen/Downloads/SUSTech_2024_autumn_Digital_Logic_project/project_final/vivado.log
+# Journal file: C:/Users/Alessandro Paschen/Downloads/SUSTech_2024_autumn_Digital_Logic_project/project_final\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Alessandro Paschen/Downloads/SUSTech_2024_autumn_Digital_Logic_project/project_final/project_final.xpr}
+update_compile_order -fileset sources_1
