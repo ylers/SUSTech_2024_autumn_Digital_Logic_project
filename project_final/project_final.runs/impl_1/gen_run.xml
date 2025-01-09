@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1734678912">
+  <File Type="PWROPT-DCP" Name="Top_pwropt.dcp"/>
+  <File Type="ROUTE-PWR" Name="Top_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="Top.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="Top_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="Top_reports.tcl"/>
+  <File Type="BG-DRC" Name="Top.drc"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Top_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="Top_timing_summary_init.rpt"/>
+  <File Type="OPT-HWDEF" Name="Top.hwdef"/>
+  <File Type="OPT-DCP" Name="Top_opt.dcp"/>
+  <File Type="OPT-DRC" Name="Top_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="Top_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="Top_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="Top_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="Top_placed.dcp"/>
+  <File Type="PLACE-IO" Name="Top_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Top_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Top_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Top_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Top_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Top_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Top_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="Top_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Top_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="Top_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="Top_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="Top_drc_physopted.rpt"/>
+  <File Type="BG-BIT" Name="Top.bit"/>
+  <File Type="PHYSOPT-TIMING" Name="Top_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Top_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="Top_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Top_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="Top_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Top_drc_routed.pb"/>
+  <File Type="BITSTR-MSK" Name="Top.msk"/>
+  <File Type="ROUTE-DRC-RPX" Name="Top_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="Top.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Top_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-RBT" Name="Top.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Top_methodology_drc_routed.rpx"/>
+  <File Type="BG-BIN" Name="Top.bin"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Top_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="Top_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="Top_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Top_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Top_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Top_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Top_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="Top_incremental_reuse_routed.rpt"/>
+  <File Type="RDI-RDI" Name="Top.vdi"/>
+  <File Type="ROUTE-CLK" Name="Top_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Top_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Top_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Top_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Top_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Top_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="Top.nky"/>
+  <File Type="BITSTR-BMM" Name="Top_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="Top.mmi"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="Top.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="Top.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/char_fifo/char_fifo.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Documents/project_12_13/resource/ip/char_fifo/char_fifo.xci"/>
+        <Attr Name="ImportTime" Val="1734082845"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/clk_core/clk_core.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Documents/project_12_13/resource/ip/clk_core/clk_core.xci"/>
+        <Attr Name="ImportTime" Val="1734082536"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Counter.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Documents/project_12_13/resource/new/Counter.v"/>
+        <Attr Name="ImportTime" Val="1734183751"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/audio.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Documents/project_12_13/resource/new/audio.v"/>
+        <Attr Name="ImportTime" Val="1734244846"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/bluetooth.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Documents/project_12_13/resource/new/bluetooth.v"/>
+        <Attr Name="ImportTime" Val="1734243587"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/bonetime.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Documents/project_12_13/resource/new/bonetime.v"/>
+        <Attr Name="ImportTime" Val="1733289949"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/clean_mode_counter.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Documents/project_12_13/resource/new/clean_mode_counter.v"/>
+        <Attr Name="ImportTime" Val="1734181483"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/clk_div.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Documents/project_12_13/resource/new/clk_div.v"/>
+        <Attr Name="ImportTime" Val="1479194718"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/clk_gen.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Documents/project_12_13/resource/new/clk_gen.v"/>
+        <Attr Name="ImportTime" Val="1479194718"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/clock.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Documents/project_12_13/resource/new/clock.v"/>
+        <Attr Name="ImportTime" Val="1734243741"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/cmd_parse.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Documents/project_12_13/resource/new/cmd_parse.v"/>
+        <Attr Name="ImportTime" Val="1734091342"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/data_select.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Documents/project_12_13/resource/new/data_select.v"/>
+        <Attr Name="ImportTime" Val="1734180930"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/debounce.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Documents/project_12_13/resource/new/debounce.v"/>
+        <Attr Name="ImportTime" Val="1734182277"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/debouncer.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Documents/project_12_13/resource/new/debouncer.v"/>
+        <Attr Name="ImportTime" Val="1479194718"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/gesture_control.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Documents/project_12_13/resource/new/gesture_control.v"/>
+        <Attr Name="ImportTime" Val="1734242964"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/lb_ctl.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Documents/project_12_13/resource/new/lb_ctl.v"/>
+        <Attr Name="ImportTime" Val="1479194718"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/meta_harden.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Documents/project_12_13/resource/new/meta_harden.v"/>
+        <Attr Name="ImportTime" Val="1479194718"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/mode.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Documents/project_12_13/resource/new/mode.v"/>
+        <Attr Name="ImportTime" Val="1734244205"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/on_off.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Documents/project_12_13/resource/new/on_off.v"/>
+        <Attr Name="ImportTime" Val="1733225059"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/reminder.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Documents/project_12_13/resource/new/reminder.v"/>
+        <Attr Name="ImportTime" Val="1734247300"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/reset_bridge.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Documents/project_12_13/resource/new/reset_bridge.v"/>
+        <Attr Name="ImportTime" Val="1479194718"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/resp_gen.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Documents/project_12_13/resource/new/resp_gen.v"/>
+        <Attr Name="ImportTime" Val="1734091343"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/rst_gen.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Documents/project_12_13/resource/new/rst_gen.v"/>
+        <Attr Name="ImportTime" Val="1479194718"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/set_gesture_time.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Documents/project_12_13/resource/new/set_gesture_time.v"/>
+        <Attr Name="ImportTime" Val="1734244631"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/set_reminder.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Documents/project_12_13/resource/new/set_reminder.v"/>
+        <Attr Name="ImportTime" Val="1734245973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/show_number.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Documents/project_12_13/resource/new/show_number.v"/>
+        <Attr Name="ImportTime" Val="1734244015"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/three_Counter.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Documents/project_12_13/resource/new/three_Counter.v"/>
+        <Attr Name="ImportTime" Val="1734181561"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/three_return_Counter.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Documents/project_12_13/resource/new/three_return_Counter.v"/>
+        <Attr Name="ImportTime" Val="1734181617"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/to_bcd.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Documents/project_12_13/resource/new/to_bcd.v"/>
+        <Attr Name="ImportTime" Val="1479194718"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/uart_baud_gen.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Documents/project_12_13/resource/new/uart_baud_gen.v"/>
+        <Attr Name="ImportTime" Val="1479194718"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/uart_rx.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Documents/project_12_13/resource/new/uart_rx.v"/>
+        <Attr Name="ImportTime" Val="1479194718"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/uart_rx_ctl.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Documents/project_12_13/resource/new/uart_rx_ctl.v"/>
+        <Attr Name="ImportTime" Val="1479194718"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/uart_tx.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Documents/project_12_13/resource/new/uart_tx.v"/>
+        <Attr Name="ImportTime" Val="1479194718"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/uart_tx_ctl.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Documents/project_12_13/resource/new/uart_tx_ctl.v"/>
+        <Attr Name="ImportTime" Val="1479194718"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Documents/project_12_13/resource/new/Top.v"/>
+        <Attr Name="ImportTime" Val="1734246792"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/constrain/bt_uart_EGo.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Documents/project_12_13/constrain/bt_uart_EGo.xdc"/>
+        <Attr Name="ImportTime" Val="1734243587"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/constrain/top_sim.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Documents/project_12_13/constrain/top_sim.xdc"/>
+        <Attr Name="ImportTime" Val="1734245051"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

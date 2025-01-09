@@ -1,0 +1,207 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Dec 20 13:48:31 2024
+# Process ID: 21056
+# Current directory: C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2600 C:\Users\Alessandro Paschen\Downloads\project_final_no_update_counter_when_close\project_final\project_final.xpr
+# Log file: C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/vivado.log
+# Journal file: C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final'
+INFO: [Project 1-313] Project file moved from 'C:/Users/Alessandro Paschen/Documents/project_final' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'impl_1' not found
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/ip/char_fifo/char_fifo.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/ip/clk_core/clk_core.xci' is already up-to-date
+[Fri Dec 20 13:48:55 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.runs/synth_1/runme.log
+[Fri Dec 20 13:48:55 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.runs/impl_1/Top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.runs/impl_1/Top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/ip/char_fifo/char_fifo.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/ip/clk_core/clk_core.xci' is already up-to-date
+[Fri Dec 20 14:53:32 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.runs/synth_1/runme.log
+[Fri Dec 20 14:53:32 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/ip/char_fifo/char_fifo.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/ip/clk_core/clk_core.xci' is already up-to-date
+[Fri Dec 20 14:55:08 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.runs/synth_1/runme.log
+[Fri Dec 20 14:55:08 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.runs/impl_1/Top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/ip/char_fifo/char_fifo.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/ip/clk_core/clk_core.xci' is already up-to-date
+[Fri Dec 20 14:58:45 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.runs/synth_1/runme.log
+[Fri Dec 20 14:58:45 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 226 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'bluetooth0/clk_gen_i0/clk_core_i0/clk_in1' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.runs/impl_1/.Xil/Vivado-27036-MSI/dcp4/clk_core.edf:317]
+Parsing XDC File [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/.Xil/Vivado-21056-MSI/dcp8/Top_board.xdc]
+Finished Parsing XDC File [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/.Xil/Vivado-21056-MSI/dcp8/Top_board.xdc]
+Parsing XDC File [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/.Xil/Vivado-21056-MSI/dcp8/Top_early.xdc]
+INFO: [Common 17-41] Interrupt caught. Command should exit soon. [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/ip/clk_core/clk_core.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/ip/clk_core/clk_core.xdc:57]
+INFO: [Common 17-344] 'get_clocks' was cancelled [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/ip/clk_core/clk_core.xdc:57]
+Finished Parsing XDC File [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/.Xil/Vivado-21056-MSI/dcp8/Top_early.xdc]
+Parsing XDC File [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/.Xil/Vivado-21056-MSI/dcp8/Top.xdc]
+Finished Parsing XDC File [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/.Xil/Vivado-21056-MSI/dcp8/Top.xdc]
+Parsing XDC File [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/.Xil/Vivado-21056-MSI/dcp8/Top_late.xdc]
+Finished Parsing XDC File [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/.Xil/Vivado-21056-MSI/dcp8/Top_late.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.102 . Memory (MB): peak = 2298.664 ; gain = 3.766
+open_run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 2299.074 ; gain = 821.984
+INFO: [Common 17-344] 'open_run' was cancelled
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.runs/impl_1/Top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/ip/char_fifo/char_fifo.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/ip/clk_core/clk_core.xci' is already up-to-date
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Fri Dec 20 15:01:51 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.runs/impl_1/Top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/ip/char_fifo/char_fifo.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/ip/clk_core/clk_core.xci' is already up-to-date
+[Fri Dec 20 15:12:08 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.runs/synth_1/runme.log
+[Fri Dec 20 15:12:08 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.runs/impl_1/Top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/ip/char_fifo/char_fifo.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/ip/clk_core/clk_core.xci' is already up-to-date
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Fri Dec 20 15:14:30 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/ip/char_fifo/char_fifo.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/ip/clk_core/clk_core.xci' is already up-to-date
+[Fri Dec 20 15:15:12 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.runs/synth_1/runme.log
+[Fri Dec 20 15:15:12 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.runs/impl_1/Top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 20 15:18:18 2024...

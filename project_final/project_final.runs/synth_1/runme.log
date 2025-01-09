@@ -1,0 +1,1364 @@
+
+*** Running vivado
+    with args -log Top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source Top.tcl -notrace
+Command: synth_design -top Top -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5428 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 346.164 ; gain = 103.699
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Top' [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/Top.v:23]
+INFO: [Synth 8-638] synthesizing module 'debounce' [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/debounce.v:23]
+	Parameter DELAY_TIME bound to: 21'b010010010011111000000 
+INFO: [Synth 8-256] done synthesizing module 'debounce' (1#1) [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/debounce.v:23]
+INFO: [Synth 8-638] synthesizing module 'bonetime' [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/bonetime.v:23]
+INFO: [Synth 8-256] done synthesizing module 'bonetime' (2#1) [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/bonetime.v:23]
+INFO: [Synth 8-638] synthesizing module 'mode' [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/mode.v:23]
+	Parameter S0 bound to: 5'b00000 
+	Parameter S1 bound to: 5'b00001 
+	Parameter S4 bound to: 5'b00100 
+	Parameter S5 bound to: 5'b00101 
+	Parameter S6 bound to: 5'b00110 
+	Parameter S7 bound to: 5'b00111 
+	Parameter S8 bound to: 5'b01000 
+	Parameter S9 bound to: 5'b01001 
+INFO: [Synth 8-638] synthesizing module 'on_off' [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/on_off.v:23]
+INFO: [Synth 8-256] done synthesizing module 'on_off' (3#1) [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/on_off.v:23]
+INFO: [Synth 8-256] done synthesizing module 'mode' (4#1) [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/mode.v:23]
+INFO: [Synth 8-638] synthesizing module 'gesture_control_off' [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/gesture_control.v:96]
+INFO: [Synth 8-256] done synthesizing module 'gesture_control_off' (5#1) [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/gesture_control.v:96]
+INFO: [Synth 8-638] synthesizing module 'gesture_control_on' [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/gesture_control.v:23]
+INFO: [Synth 8-256] done synthesizing module 'gesture_control_on' (6#1) [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/gesture_control.v:23]
+INFO: [Synth 8-638] synthesizing module 'clock' [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/clock.v:23]
+WARNING: [Synth 8-5788] Register timer_cnt_reg in module clock is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/clock.v:70]
+INFO: [Synth 8-256] done synthesizing module 'clock' (7#1) [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/clock.v:23]
+INFO: [Synth 8-638] synthesizing module 'data_select' [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/data_select.v:23]
+	Parameter S0 bound to: 5'b00000 
+	Parameter S1 bound to: 5'b00001 
+	Parameter S2 bound to: 5'b00010 
+	Parameter S3 bound to: 5'b00011 
+	Parameter S4 bound to: 5'b00100 
+	Parameter S5 bound to: 5'b00101 
+	Parameter S6 bound to: 5'b00110 
+	Parameter S7 bound to: 5'b00111 
+	Parameter S8 bound to: 5'b01000 
+	Parameter S9 bound to: 5'b01001 
+INFO: [Synth 8-256] done synthesizing module 'data_select' (8#1) [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/data_select.v:23]
+INFO: [Synth 8-638] synthesizing module 'show_number' [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/show_number.v:23]
+WARNING: [Synth 8-567] referenced signal 'data' should be on the sensitivity list [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/show_number.v:66]
+INFO: [Synth 8-256] done synthesizing module 'show_number' (9#1) [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/show_number.v:23]
+INFO: [Synth 8-638] synthesizing module 'set_gesture_time' [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/set_gesture_time.v:23]
+INFO: [Synth 8-256] done synthesizing module 'set_gesture_time' (10#1) [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/set_gesture_time.v:23]
+INFO: [Synth 8-638] synthesizing module 'set_reminder' [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/set_reminder.v:23]
+INFO: [Synth 8-256] done synthesizing module 'set_reminder' (11#1) [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/set_reminder.v:23]
+INFO: [Synth 8-638] synthesizing module 'reminder' [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/reminder.v:23]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register timer_cnt_reg in module reminder. [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/reminder.v:59]
+INFO: [Synth 8-256] done synthesizing module 'reminder' (12#1) [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/reminder.v:23]
+INFO: [Synth 8-638] synthesizing module 'clean_mode_counter' [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/clean_mode_counter.v:23]
+	Parameter START_TIME bound to: 32'b00000000000000000000000000001111 
+	Parameter NOW_MODE bound to: 5'b01000 
+INFO: [Synth 8-638] synthesizing module 'Counter' [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/Counter.v:28]
+WARNING: [Synth 8-5788] Register seconds_reg in module Counter is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/Counter.v:46]
+WARNING: [Synth 8-5788] Register minutes_reg in module Counter is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/Counter.v:47]
+WARNING: [Synth 8-5788] Register hours_reg in module Counter is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/Counter.v:48]
+INFO: [Synth 8-256] done synthesizing module 'Counter' (13#1) [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/Counter.v:28]
+INFO: [Synth 8-256] done synthesizing module 'clean_mode_counter' (14#1) [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/clean_mode_counter.v:23]
+INFO: [Synth 8-638] synthesizing module 'three_Counter' [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/three_Counter.v:23]
+	Parameter START_TIME bound to: 32'b00000000000000000000000000001100 
+	Parameter NOW_MODE bound to: 5'b00111 
+INFO: [Synth 8-256] done synthesizing module 'three_Counter' (15#1) [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/three_Counter.v:23]
+INFO: [Synth 8-638] synthesizing module 'three_return_Counter' [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/three_return_Counter.v:23]
+	Parameter START_TIME bound to: 32'b00000000000000000000000000001100 
+	Parameter NOW_MODE bound to: 5'b01001 
+INFO: [Synth 8-256] done synthesizing module 'three_return_Counter' (16#1) [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/three_return_Counter.v:23]
+INFO: [Synth 8-638] synthesizing module 'bluetooth' [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/bluetooth.v:4]
+	Parameter BAUD_RATE bound to: 9600 - type: integer 
+	Parameter CLOCK_RATE_RX bound to: 100000000 - type: integer 
+	Parameter CLOCK_RATE_TX bound to: 100000000 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:19468]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-256] done synthesizing module 'IBUF' (17#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:19468]
+INFO: [Synth 8-638] synthesizing module 'OBUF' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:27270]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-256] done synthesizing module 'OBUF' (18#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:27270]
+INFO: [Synth 8-638] synthesizing module 'clk_gen' [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/clk_gen.v:33]
+INFO: [Synth 8-638] synthesizing module 'clk_div' [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/clk_div.v:30]
+INFO: [Synth 8-256] done synthesizing module 'clk_div' (19#1) [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/clk_div.v:30]
+INFO: [Synth 8-638] synthesizing module 'clk_core' [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.runs/synth_1/.Xil/Vivado-25672-MSI/realtime/clk_core_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'clk_core' (20#1) [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.runs/synth_1/.Xil/Vivado-25672-MSI/realtime/clk_core_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'BUFHCE' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:816]
+	Parameter CE_TYPE bound to: SYNC - type: string 
+	Parameter INIT_OUT bound to: 0 - type: integer 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'BUFHCE' (21#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:816]
+INFO: [Synth 8-256] done synthesizing module 'clk_gen' (22#1) [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/clk_gen.v:33]
+INFO: [Synth 8-638] synthesizing module 'rst_gen' [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/rst_gen.v:26]
+INFO: [Synth 8-638] synthesizing module 'reset_bridge' [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/reset_bridge.v:35]
+INFO: [Synth 8-256] done synthesizing module 'reset_bridge' (23#1) [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/reset_bridge.v:35]
+INFO: [Synth 8-256] done synthesizing module 'rst_gen' (24#1) [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/rst_gen.v:26]
+INFO: [Synth 8-638] synthesizing module 'uart_rx' [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/uart_rx.v:6]
+	Parameter BAUD_RATE bound to: 9600 - type: integer 
+	Parameter CLOCK_RATE bound to: 100000000 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'meta_harden' [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/meta_harden.v:27]
+INFO: [Synth 8-256] done synthesizing module 'meta_harden' (25#1) [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/meta_harden.v:27]
+INFO: [Synth 8-638] synthesizing module 'uart_baud_gen' [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/uart_baud_gen.v:35]
+	Parameter BAUD_RATE bound to: 9600 - type: integer 
+	Parameter CLOCK_RATE bound to: 100000000 - type: integer 
+	Parameter OVERSAMPLE_RATE bound to: 153600 - type: integer 
+	Parameter DIVIDER bound to: 651 - type: integer 
+	Parameter OVERSAMPLE_VALUE bound to: 650 - type: integer 
+	Parameter CNT_WID bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uart_baud_gen' (26#1) [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/uart_baud_gen.v:35]
+INFO: [Synth 8-638] synthesizing module 'uart_rx_ctl' [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/uart_rx_ctl.v:52]
+	Parameter IDLE bound to: 2'b00 
+	Parameter START bound to: 2'b01 
+	Parameter DATA bound to: 2'b10 
+	Parameter STOP bound to: 2'b11 
+INFO: [Synth 8-256] done synthesizing module 'uart_rx_ctl' (27#1) [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/uart_rx_ctl.v:52]
+INFO: [Synth 8-256] done synthesizing module 'uart_rx' (28#1) [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/uart_rx.v:6]
+INFO: [Synth 8-638] synthesizing module 'cmd_parse' [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/cmd_parse.v:6]
+	Parameter MAX_ARG_CH bound to: 11 - type: integer 
+	Parameter RESP_OK bound to: 4'b0000 
+	Parameter RESP_ERR bound to: 4'b0001 
+	Parameter RESP_wind1 bound to: 4'b0010 
+	Parameter RESP_wind2 bound to: 4'b0011 
+	Parameter RESP_wind3 bound to: 4'b0100 
+	Parameter RESP_clean bound to: 4'b0101 
+	Parameter RESP_await bound to: 4'b0110 
+	Parameter RESP_close bound to: 4'b0111 
+	Parameter RESP_menuu bound to: 4'b1000 
+	Parameter RESP_other bound to: 4'b1001 
+	Parameter S0 bound to: 4'b0000 
+	Parameter S1 bound to: 4'b0001 
+	Parameter S4 bound to: 4'b0100 
+	Parameter S5 bound to: 4'b0101 
+	Parameter S6 bound to: 4'b0110 
+	Parameter S7 bound to: 4'b0111 
+	Parameter S8 bound to: 4'b1000 
+	Parameter S9 bound to: 4'b1001 
+	Parameter IDLE bound to: 3'b000 
+	Parameter CMD_WAIT bound to: 3'b001 
+	Parameter GET_ARG bound to: 3'b010 
+	Parameter SEND_RESP bound to: 3'b011 
+	Parameter CMD_C bound to: 7'b1000011 
+	Parameter CMD_S bound to: 7'b1010011 
+	Parameter CMD_D bound to: 7'b1000100 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/cmd_parse.v:315]
+WARNING: [Synth 8-6014] Unused sequential element arg_sav_reg was removed.  [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/cmd_parse.v:225]
+INFO: [Synth 8-256] done synthesizing module 'cmd_parse' (29#1) [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/cmd_parse.v:6]
+INFO: [Synth 8-638] synthesizing module 'resp_gen' [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/resp_gen.v:41]
+	Parameter RESP_OK bound to: 4'b0000 
+	Parameter RESP_ERR bound to: 4'b0001 
+	Parameter RESP_wind1 bound to: 4'b0010 
+	Parameter RESP_wind2 bound to: 4'b0011 
+	Parameter RESP_wind3 bound to: 4'b0100 
+	Parameter RESP_clean bound to: 4'b0101 
+	Parameter RESP_await bound to: 4'b0110 
+	Parameter RESP_close bound to: 4'b0111 
+	Parameter RESP_menuu bound to: 4'b1000 
+	Parameter RESP_other bound to: 4'b1001 
+	Parameter STR_OK_LEN bound to: 5 - type: integer 
+	Parameter STR_ERR_LEN bound to: 6 - type: integer 
+	Parameter STR_DATA_LEN bound to: 13 - type: integer 
+	Parameter STR_CURRENTSTATE_LEN bound to: 21 - type: integer 
+	Parameter STR_STATE_LEN bound to: 7 - type: integer 
+	Parameter STR_LEN bound to: 21 - type: integer 
+	Parameter CNT_WID bound to: 5 - type: integer 
+	Parameter LEN_WID bound to: 5 - type: integer 
+	Parameter IDLE bound to: 1'b0 
+	Parameter SENDING bound to: 1'b1 
+INFO: [Synth 8-638] synthesizing module 'to_bcd' [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/to_bcd.v:33]
+INFO: [Synth 8-256] done synthesizing module 'to_bcd' (30#1) [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/to_bcd.v:33]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/resp_gen.v:229]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/resp_gen.v:239]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/resp_gen.v:270]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/resp_gen.v:297]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/resp_gen.v:325]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/resp_gen.v:353]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/resp_gen.v:385]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/resp_gen.v:414]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/resp_gen.v:443]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/resp_gen.v:472]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/resp_gen.v:501]
+WARNING: [Synth 8-3848] Net RESP_DATA in module/entity resp_gen does not have driver. [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/resp_gen.v:161]
+INFO: [Synth 8-256] done synthesizing module 'resp_gen' (31#1) [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/resp_gen.v:41]
+WARNING: [Synth 8-350] instance 'resp_gen_i0' of module 'resp_gen' requires 13 connections, but only 11 given [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/bluetooth.v:221]
+INFO: [Synth 8-638] synthesizing module 'char_fifo' [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.runs/synth_1/.Xil/Vivado-25672-MSI/realtime/char_fifo_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'char_fifo' (32#1) [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.runs/synth_1/.Xil/Vivado-25672-MSI/realtime/char_fifo_stub.v:6]
+WARNING: [Synth 8-350] instance 'char_fifo_i0' of module 'char_fifo' requires 11 connections, but only 9 given [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/bluetooth.v:252]
+INFO: [Synth 8-638] synthesizing module 'uart_tx' [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/uart_tx.v:35]
+	Parameter BAUD_RATE bound to: 9600 - type: integer 
+	Parameter CLOCK_RATE bound to: 100000000 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'uart_tx_ctl' [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/uart_tx_ctl.v:60]
+	Parameter IDLE bound to: 2'b00 
+	Parameter START bound to: 2'b01 
+	Parameter DATA bound to: 2'b10 
+	Parameter STOP bound to: 2'b11 
+INFO: [Synth 8-256] done synthesizing module 'uart_tx_ctl' (33#1) [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/uart_tx_ctl.v:60]
+INFO: [Synth 8-256] done synthesizing module 'uart_tx' (34#1) [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/uart_tx.v:35]
+INFO: [Synth 8-638] synthesizing module 'lb_ctl' [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/lb_ctl.v:32]
+	Parameter FILTER bound to: 200000 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'debouncer' [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/debouncer.v:26]
+	Parameter FILTER bound to: 200000 - type: integer 
+	Parameter RELOAD bound to: 199999 - type: integer 
+	Parameter FILTER_WIDTH bound to: 18 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'debouncer' (35#1) [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/debouncer.v:26]
+INFO: [Synth 8-256] done synthesizing module 'lb_ctl' (36#1) [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/lb_ctl.v:32]
+INFO: [Synth 8-256] done synthesizing module 'bluetooth' (37#1) [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/bluetooth.v:4]
+WARNING: [Synth 8-689] width (5) of port connection 'sw_pin' does not match port width (6) of module 'bluetooth' [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/Top.v:255]
+INFO: [Synth 8-638] synthesizing module 'audio' [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/audio.v:2]
+	Parameter do_low bound to: 190840 - type: integer 
+	Parameter re_low bound to: 170259 - type: integer 
+	Parameter me_low bound to: 151685 - type: integer 
+	Parameter fa_low bound to: 143172 - type: integer 
+	Parameter so_low bound to: 127554 - type: integer 
+	Parameter la_low bound to: 113636 - type: integer 
+	Parameter si_low bound to: 101239 - type: integer 
+	Parameter do bound to: 93941 - type: integer 
+	Parameter re bound to: 85136 - type: integer 
+	Parameter me bound to: 75838 - type: integer 
+	Parameter fa bound to: 71582 - type: integer 
+	Parameter so bound to: 63776 - type: integer 
+	Parameter la bound to: 56818 - type: integer 
+	Parameter si bound to: 50618 - type: integer 
+	Parameter do_high bound to: 47778 - type: integer 
+	Parameter re_high bound to: 42567 - type: integer 
+	Parameter me_high bound to: 37921 - type: integer 
+	Parameter fa_high bound to: 36498 - type: integer 
+	Parameter so_high bound to: 31888 - type: integer 
+	Parameter la_high bound to: 28409 - type: integer 
+	Parameter si_high bound to: 25309 - type: integer 
+	Parameter beat1 bound to: 25000000 - type: integer 
+	Parameter start bound to: 85'b0010100101010000100101010000010011000001000000100101010011000110101101010010011100001 
+	Parameter length1 bound to: 17 - type: integer 
+	Parameter beat2 bound to: 25000000 - type: integer 
+	Parameter clean bound to: 80'b00001000010010100101001100011000101000000010000100000110001100010000100000100000 
+	Parameter length2 bound to: 16 - type: integer 
+	Parameter beat3 bound to: 25000000 - type: integer 
+	Parameter mode1 bound to: 35'b01000010010101001011011000110101110 
+	Parameter length3 bound to: 7 - type: integer 
+	Parameter beat4 bound to: 25000000 - type: integer 
+	Parameter mode2 bound to: 15'b010001111101000 
+	Parameter length4 bound to: 3 - type: integer 
+	Parameter beat5 bound to: 25000000 - type: integer 
+	Parameter mode3 bound to: 25'b0100000000010000000001000 
+	Parameter length5 bound to: 5 - type: integer 
+	Parameter beat6 bound to: 25000000 - type: integer 
+	Parameter modeSilence bound to: 100'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter lengthSilence bound to: 20 - type: integer 
+	Parameter CHANGE bound to: 2'b01 
+	Parameter PLAY bound to: 2'b10 
+	Parameter silence bound to: -84901888 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'audio' (38#1) [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/audio.v:2]
+INFO: [Synth 8-256] done synthesizing module 'Top' (39#1) [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/Top.v:23]
+WARNING: [Synth 8-3917] design Top has port t driven by constant 0
+WARNING: [Synth 8-3331] design resp_gen has unconnected port displayMode
+WARNING: [Synth 8-3331] design resp_gen has unconnected port mode[4]
+WARNING: [Synth 8-3331] design resp_gen has unconnected port mode[3]
+WARNING: [Synth 8-3331] design resp_gen has unconnected port mode[2]
+WARNING: [Synth 8-3331] design resp_gen has unconnected port mode[1]
+WARNING: [Synth 8-3331] design resp_gen has unconnected port mode[0]
+WARNING: [Synth 8-3331] design bluetooth has unconnected port sw_pin[5]
+WARNING: [Synth 8-3331] design Counter has unconnected port enable
+WARNING: [Synth 8-3331] design reminder has unconnected port switch[7]
+WARNING: [Synth 8-3331] design reminder has unconnected port switch[6]
+WARNING: [Synth 8-3331] design reminder has unconnected port switch[4]
+WARNING: [Synth 8-3331] design reminder has unconnected port switch[3]
+WARNING: [Synth 8-3331] design reminder has unconnected port switch[2]
+WARNING: [Synth 8-3331] design reminder has unconnected port switch[1]
+WARNING: [Synth 8-3331] design reminder has unconnected port bin[4]
+WARNING: [Synth 8-3331] design reminder has unconnected port bin[3]
+WARNING: [Synth 8-3331] design reminder has unconnected port bin[2]
+WARNING: [Synth 8-3331] design reminder has unconnected port bin[1]
+WARNING: [Synth 8-3331] design reminder has unconnected port bin[0]
+WARNING: [Synth 8-3331] design data_select has unconnected port clk
+WARNING: [Synth 8-3331] design data_select has unconnected port rst
+WARNING: [Synth 8-3331] design data_select has unconnected port switch[7]
+WARNING: [Synth 8-3331] design data_select has unconnected port switch[6]
+WARNING: [Synth 8-3331] design data_select has unconnected port switch[4]
+WARNING: [Synth 8-3331] design data_select has unconnected port switch[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 405.641 ; gain = 163.176
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin clk_gen_i0:pre_clk_tx[15] to constant 0 [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/bluetooth.v:147]
+WARNING: [Synth 8-3295] tying undriven pin clk_gen_i0:pre_clk_tx[14] to constant 0 [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/bluetooth.v:147]
+WARNING: [Synth 8-3295] tying undriven pin clk_gen_i0:pre_clk_tx[13] to constant 0 [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/bluetooth.v:147]
+WARNING: [Synth 8-3295] tying undriven pin clk_gen_i0:pre_clk_tx[12] to constant 0 [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/bluetooth.v:147]
+WARNING: [Synth 8-3295] tying undriven pin clk_gen_i0:pre_clk_tx[11] to constant 0 [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/bluetooth.v:147]
+WARNING: [Synth 8-3295] tying undriven pin clk_gen_i0:pre_clk_tx[10] to constant 0 [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/bluetooth.v:147]
+WARNING: [Synth 8-3295] tying undriven pin clk_gen_i0:pre_clk_tx[9] to constant 0 [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/bluetooth.v:147]
+WARNING: [Synth 8-3295] tying undriven pin clk_gen_i0:pre_clk_tx[8] to constant 0 [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/bluetooth.v:147]
+WARNING: [Synth 8-3295] tying undriven pin clk_gen_i0:pre_clk_tx[7] to constant 0 [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/bluetooth.v:147]
+WARNING: [Synth 8-3295] tying undriven pin clk_gen_i0:pre_clk_tx[6] to constant 0 [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/bluetooth.v:147]
+WARNING: [Synth 8-3295] tying undriven pin clk_gen_i0:pre_clk_tx[5] to constant 0 [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/bluetooth.v:147]
+WARNING: [Synth 8-3295] tying undriven pin clk_gen_i0:pre_clk_tx[4] to constant 0 [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/bluetooth.v:147]
+WARNING: [Synth 8-3295] tying undriven pin clk_gen_i0:pre_clk_tx[3] to constant 0 [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/bluetooth.v:147]
+WARNING: [Synth 8-3295] tying undriven pin clk_gen_i0:pre_clk_tx[2] to constant 0 [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/bluetooth.v:147]
+WARNING: [Synth 8-3295] tying undriven pin clk_gen_i0:pre_clk_tx[1] to constant 0 [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/bluetooth.v:147]
+WARNING: [Synth 8-3295] tying undriven pin clk_gen_i0:pre_clk_tx[0] to constant 0 [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/bluetooth.v:147]
+WARNING: [Synth 8-3295] tying undriven pin rst_gen_i0:clk_samp to constant 0 [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/bluetooth.v:164]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 405.641 ; gain = 163.176
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.runs/synth_1/.Xil/Vivado-25672-MSI/dcp2/char_fifo_in_context.xdc] for cell 'bluetooth0/char_fifo_i0'
+Finished Parsing XDC File [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.runs/synth_1/.Xil/Vivado-25672-MSI/dcp2/char_fifo_in_context.xdc] for cell 'bluetooth0/char_fifo_i0'
+Parsing XDC File [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.runs/synth_1/.Xil/Vivado-25672-MSI/dcp3/clk_core_in_context.xdc] for cell 'bluetooth0/clk_gen_i0/clk_core_i0'
+Finished Parsing XDC File [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.runs/synth_1/.Xil/Vivado-25672-MSI/dcp3/clk_core_in_context.xdc] for cell 'bluetooth0/clk_gen_i0/clk_core_i0'
+Parsing XDC File [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/constrs_1/imports/constrain/bt_uart_EGo.xdc]
+Finished Parsing XDC File [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/constrs_1/imports/constrain/bt_uart_EGo.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/constrs_1/imports/constrain/bt_uart_EGo.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/constrs_1/imports/constrain/top_sim.xdc]
+Finished Parsing XDC File [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/constrs_1/imports/constrain/top_sim.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/constrs_1/imports/constrain/top_sim.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 749.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 749.535 ; gain = 507.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 749.535 ; gain = 507.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  {C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.runs/synth_1/.Xil/Vivado-25672-MSI/dcp3/clk_core_in_context.xdc}, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  {C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.runs/synth_1/.Xil/Vivado-25672-MSI/dcp3/clk_core_in_context.xdc}, line 5).
+Applied set_property DONT_TOUCH = true for bluetooth0/char_fifo_i0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bluetooth0/clk_gen_i0/clk_core_i0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 749.535 ; gain = 507.070
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/on_off.v:62]
+INFO: [Synth 8-802] inferred FSM for state register 'modes_reg' in module 'mode'
+INFO: [Synth 8-5587] ROM size for "changeonlyone" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5544] ROM "next_mode" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_mode" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_mode" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_mode" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_mode" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_mode" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_mode" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_mode" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/gesture_control.v:109]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/gesture_control.v:36]
+INFO: [Synth 8-5587] ROM size for "seg_data" is below threshold of ROM address width. It will be mapped to LUTs
+WARNING: [Synth 8-6014] Unused sequential element clk_cnt_reg was removed.  [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/show_number.v:38]
+INFO: [Synth 8-5546] ROM "who" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reminder_led" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element timer_cnt_reg was removed.  [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/reminder.v:59]
+WARNING: [Synth 8-6014] Unused sequential element seconds_reg was removed.  [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/reminder.v:60]
+WARNING: [Synth 8-6014] Unused sequential element minutes_reg was removed.  [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/reminder.v:61]
+WARNING: [Synth 8-6014] Unused sequential element hours_reg was removed.  [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/reminder.v:62]
+WARNING: [Synth 8-6014] Unused sequential element timer_cnt_reg was removed.  [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/Counter.v:45]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/clk_div.v:74]
+INFO: [Synth 8-5544] ROM "bit_cnt" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bit_cnt" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_data_rdy" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'cmd_parse'
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "arg_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "send_resp_val" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "send_resp_type" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "dig4" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dig3" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dig2" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dig1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element char_cnt_reg was removed.  [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/resp_gen.v:177]
+INFO: [Synth 8-5544] ROM "bit_cnt" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bit_cnt" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "signal_out_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clkPeriodCount" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "isCycle" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "currentLength" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "currentLength" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "melody" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element clkPeriodCount_reg was removed.  [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/audio.v:94]
+WARNING: [Synth 8-6014] Unused sequential element countForcurrentNote_reg was removed.  [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/audio.v:95]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      S0 |                              000 |                            00000
+                      S1 |                              001 |                            00001
+                      S4 |                              010 |                            00100
+                      S7 |                              011 |                            00111
+                      S6 |                              100 |                            00110
+                      S5 |                              101 |                            00101
+                      S9 |                              110 |                            01001
+                      S8 |                              111 |                            01000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'modes_reg' using encoding 'sequential' in module 'mode'
+WARNING: [Synth 8-327] inferring latch for variable 'reset_after_clean_reg' [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/mode.v:77]
+WARNING: [Synth 8-327] inferring latch for variable 'reminder_led_reg' [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/reminder.v:95]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                              000
+                CMD_WAIT |                               01 |                              001
+                 GET_ARG |                               10 |                              010
+               SEND_RESP |                               11 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'cmd_parse'
+WARNING: [Synth 8-327] inferring latch for variable 'char_fifo_din_reg' [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/resp_gen.v:223]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 749.535 ; gain = 507.070
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
+	   2 Input     21 Bit       Adders := 5     
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 6     
+	   2 Input     10 Bit       Adders := 11    
+	   2 Input      7 Bit       Adders := 27    
+	   3 Input      7 Bit       Adders := 3     
+	   2 Input      6 Bit       Adders := 9     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 12    
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	              201 Bit    Registers := 1     
+	               44 Bit    Registers := 1     
+	               32 Bit    Registers := 9     
+	               21 Bit    Registers := 5     
+	               19 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 3     
+	                7 Bit    Registers := 16    
+	                6 Bit    Registers := 6     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 76    
++---Muxes : 
+	   2 Input     83 Bit        Muxes := 1     
+	   2 Input     76 Bit        Muxes := 1     
+	   2 Input     44 Bit        Muxes := 3     
+	   4 Input     44 Bit        Muxes := 1     
+	   2 Input     34 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 19    
+	   9 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   3 Input     21 Bit        Muxes := 5     
+	   2 Input     19 Bit        Muxes := 2     
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 6     
+	   6 Input      8 Bit        Muxes := 1     
+	   7 Input      8 Bit        Muxes := 1     
+	  11 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 56    
+	   2 Input      6 Bit        Muxes := 32    
+	   8 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 9     
+	   5 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 4     
+	   9 Input      4 Bit        Muxes := 1     
+	  39 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 3     
+	   6 Input      3 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 81    
+	   8 Input      1 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 16    
+	  13 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module debounce 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     21 Bit       Adders := 1     
++---Registers : 
+	               21 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   3 Input     21 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module bonetime 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module on_off 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module mode 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      5 Bit        Muxes := 1     
+	  39 Input      3 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 3     
+Module gesture_control_off 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 7     
+Module gesture_control_on 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 10    
+Module clock 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 8     
+	   2 Input      6 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 6     
+	   6 Input      1 Bit        Muxes := 3     
+Module data_select 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   9 Input     32 Bit        Muxes := 1     
+Module show_number 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module set_gesture_time 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module set_reminder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 3     
+Module reminder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module Counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 2     
++---Registers : 
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 10    
+	   2 Input      6 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 2     
+Module clean_mode_counter 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module three_Counter 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module three_return_Counter 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module clk_div 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module reset_bridge 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module meta_harden 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module uart_baud_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module uart_rx_ctl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   5 Input      4 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 1     
+Module cmd_parse 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input      7 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               44 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 4     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     44 Bit        Muxes := 3     
+	   4 Input     44 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	   4 Input      4 Bit        Muxes := 4     
+	   9 Input      4 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 10    
+Module to_bcd 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 6     
+	   2 Input     10 Bit       Adders := 9     
+	   2 Input      7 Bit       Adders := 9     
+	   2 Input      4 Bit       Adders := 7     
++---Registers : 
+	               19 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 9     
+	   3 Input      3 Bit        Muxes := 3     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module resp_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+	   6 Input      8 Bit        Muxes := 1     
+	   7 Input      8 Bit        Muxes := 1     
+	  11 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+	  13 Input      1 Bit        Muxes := 1     
+Module uart_tx_ctl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 2     
+Module debouncer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
++---Registers : 
+	               18 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module lb_ctl 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module audio 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	              201 Bit    Registers := 1     
+	               32 Bit    Registers := 5     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     83 Bit        Muxes := 1     
+	   2 Input     76 Bit        Muxes := 1     
+	   2 Input     34 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 7     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+	   3 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element oo1/count_reg was removed.  [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/on_off.v:62]
+DSP Report: Generating DSP COUNTER_MAX, operation Mode is: (A:0xf5e100)*B.
+DSP Report: operator COUNTER_MAX is absorbed into DSP COUNTER_MAX.
+DSP Report: operator COUNTER_MAX is absorbed into DSP COUNTER_MAX.
+DSP Report: Generating DSP COUNTER_MAX, operation Mode is: (A:0xf5e100)*B.
+DSP Report: operator COUNTER_MAX is absorbed into DSP COUNTER_MAX.
+DSP Report: operator COUNTER_MAX is absorbed into DSP COUNTER_MAX.
+WARNING: [Synth 8-6014] Unused sequential element clk_cnt_reg was removed.  [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/show_number.v:38]
+WARNING: [Synth 8-6014] Unused sequential element timer_cnt_reg was removed.  [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/reminder.v:59]
+WARNING: [Synth 8-6014] Unused sequential element seconds_reg was removed.  [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/reminder.v:60]
+WARNING: [Synth 8-6014] Unused sequential element minutes_reg was removed.  [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/reminder.v:61]
+WARNING: [Synth 8-6014] Unused sequential element hours_reg was removed.  [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/reminder.v:62]
+WARNING: [Synth 8-6014] Unused sequential element timer_cnt_reg was removed.  [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/Counter.v:45]
+WARNING: [Synth 8-6014] Unused sequential element timer_cnt_reg was removed.  [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/Counter.v:45]
+WARNING: [Synth 8-6014] Unused sequential element timer_cnt_reg was removed.  [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/Counter.v:45]
+WARNING: [Synth 8-6014] Unused sequential element to_bcd_i0/val_d1_reg was removed.  [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/to_bcd.v:163]
+WARNING: [Synth 8-6014] Unused sequential element to_bcd_i0/bcd_out_reg was removed.  [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/to_bcd.v:178]
+WARNING: [Synth 8-6014] Unused sequential element char_cnt_reg was removed.  [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/resp_gen.v:177]
+INFO: [Synth 8-5546] ROM "lb_ctl_i0/debouncer_i0/signal_out_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'index_reg[31:0]' into 'index_reg[31:0]' [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/audio.v:93]
+WARNING: [Synth 8-6014] Unused sequential element index_reg was removed.  [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/audio.v:93]
+WARNING: [Synth 8-6014] Unused sequential element countForcurrentNote_reg was removed.  [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/audio.v:95]
+WARNING: [Synth 8-6014] Unused sequential element clkPeriodCount_reg was removed.  [C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.srcs/sources_1/imports/new/audio.v:94]
+WARNING: [Synth 8-3917] design Top has port bt_pw_on driven by constant 0
+WARNING: [Synth 8-3917] design Top has port bt_master_slave driven by constant 1
+WARNING: [Synth 8-3917] design Top has port bt_sw_hw driven by constant 1
+WARNING: [Synth 8-3917] design Top has port bt_sw driven by constant 1
+WARNING: [Synth 8-3917] design Top has port t driven by constant 0
+WARNING: [Synth 8-3331] design resp_gen has unconnected port displayMode
+WARNING: [Synth 8-3331] design resp_gen has unconnected port mode[4]
+WARNING: [Synth 8-3331] design resp_gen has unconnected port mode[3]
+WARNING: [Synth 8-3331] design resp_gen has unconnected port mode[2]
+WARNING: [Synth 8-3331] design resp_gen has unconnected port mode[1]
+WARNING: [Synth 8-3331] design resp_gen has unconnected port mode[0]
+WARNING: [Synth 8-3331] design bluetooth has unconnected port sw_pin[5]
+WARNING: [Synth 8-3331] design Counter has unconnected port enable
+WARNING: [Synth 8-3331] design reminder has unconnected port switch[7]
+WARNING: [Synth 8-3331] design reminder has unconnected port switch[6]
+WARNING: [Synth 8-3331] design reminder has unconnected port switch[4]
+WARNING: [Synth 8-3331] design reminder has unconnected port switch[3]
+WARNING: [Synth 8-3331] design reminder has unconnected port switch[2]
+WARNING: [Synth 8-3331] design reminder has unconnected port switch[1]
+WARNING: [Synth 8-3331] design reminder has unconnected port bin[4]
+WARNING: [Synth 8-3331] design reminder has unconnected port bin[3]
+WARNING: [Synth 8-3331] design reminder has unconnected port bin[2]
+WARNING: [Synth 8-3331] design reminder has unconnected port bin[1]
+WARNING: [Synth 8-3331] design reminder has unconnected port bin[0]
+WARNING: [Synth 8-3331] design data_select has unconnected port clk
+WARNING: [Synth 8-3331] design data_select has unconnected port rst
+WARNING: [Synth 8-3331] design data_select has unconnected port switch[7]
+WARNING: [Synth 8-3331] design data_select has unconnected port switch[6]
+INFO: [Synth 8-3886] merging instance 'audio/totalPeriodsOneNote_reg[0]' (FDRE) to 'audio/totalPeriodsOneNote_reg[1]'
+INFO: [Synth 8-3886] merging instance 'audio/totalPeriodsOneNote_reg[1]' (FDRE) to 'audio/totalPeriodsOneNote_reg[2]'
+INFO: [Synth 8-3886] merging instance 'audio/totalPeriodsOneNote_reg[2]' (FDRE) to 'audio/totalPeriodsOneNote_reg[3]'
+INFO: [Synth 8-3886] merging instance 'audio/totalPeriodsOneNote_reg[3]' (FDRE) to 'audio/totalPeriodsOneNote_reg[4]'
+INFO: [Synth 8-3886] merging instance 'audio/totalPeriodsOneNote_reg[4]' (FDRE) to 'audio/totalPeriodsOneNote_reg[5]'
+INFO: [Synth 8-3886] merging instance 'audio/totalPeriodsOneNote_reg[5]' (FDRE) to 'audio/totalPeriodsOneNote_reg[7]'
+INFO: [Synth 8-3886] merging instance 'audio/totalPeriodsOneNote_reg[6]' (FDSE) to 'audio/totalPeriodsOneNote_reg[11]'
+INFO: [Synth 8-3886] merging instance 'audio/totalPeriodsOneNote_reg[7]' (FDRE) to 'audio/totalPeriodsOneNote_reg[8]'
+INFO: [Synth 8-3886] merging instance 'audio/totalPeriodsOneNote_reg[8]' (FDRE) to 'audio/totalPeriodsOneNote_reg[9]'
+INFO: [Synth 8-3886] merging instance 'audio/totalPeriodsOneNote_reg[9]' (FDRE) to 'audio/totalPeriodsOneNote_reg[10]'
+INFO: [Synth 8-3886] merging instance 'audio/totalPeriodsOneNote_reg[10]' (FDRE) to 'audio/totalPeriodsOneNote_reg[15]'
+INFO: [Synth 8-3886] merging instance 'audio/totalPeriodsOneNote_reg[11]' (FDSE) to 'audio/totalPeriodsOneNote_reg[12]'
+INFO: [Synth 8-3886] merging instance 'audio/totalPeriodsOneNote_reg[12]' (FDSE) to 'audio/totalPeriodsOneNote_reg[13]'
+INFO: [Synth 8-3886] merging instance 'audio/totalPeriodsOneNote_reg[13]' (FDSE) to 'audio/totalPeriodsOneNote_reg[14]'
+INFO: [Synth 8-3886] merging instance 'audio/totalPeriodsOneNote_reg[14]' (FDSE) to 'audio/totalPeriodsOneNote_reg[16]'
+INFO: [Synth 8-3886] merging instance 'audio/totalPeriodsOneNote_reg[15]' (FDRE) to 'audio/totalPeriodsOneNote_reg[17]'
+INFO: [Synth 8-3886] merging instance 'audio/totalPeriodsOneNote_reg[16]' (FDSE) to 'audio/totalPeriodsOneNote_reg[18]'
+INFO: [Synth 8-3886] merging instance 'audio/totalPeriodsOneNote_reg[17]' (FDRE) to 'audio/totalPeriodsOneNote_reg[23]'
+INFO: [Synth 8-3886] merging instance 'audio/totalPeriodsOneNote_reg[18]' (FDSE) to 'audio/totalPeriodsOneNote_reg[19]'
+INFO: [Synth 8-3886] merging instance 'audio/totalPeriodsOneNote_reg[19]' (FDSE) to 'audio/totalPeriodsOneNote_reg[20]'
+INFO: [Synth 8-3886] merging instance 'audio/totalPeriodsOneNote_reg[20]' (FDSE) to 'audio/totalPeriodsOneNote_reg[21]'
+INFO: [Synth 8-3886] merging instance 'audio/totalPeriodsOneNote_reg[21]' (FDSE) to 'audio/totalPeriodsOneNote_reg[22]'
+INFO: [Synth 8-3886] merging instance 'audio/totalPeriodsOneNote_reg[22]' (FDSE) to 'audio/totalPeriodsOneNote_reg[24]'
+INFO: [Synth 8-3886] merging instance 'audio/totalPeriodsOneNote_reg[23]' (FDRE) to 'audio/totalPeriodsOneNote_reg[25]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (audio/\totalPeriodsOneNote_reg[24] )
+INFO: [Synth 8-3886] merging instance 'audio/totalPeriodsOneNote_reg[25]' (FDRE) to 'audio/totalPeriodsOneNote_reg[26]'
+INFO: [Synth 8-3886] merging instance 'audio/totalPeriodsOneNote_reg[26]' (FDRE) to 'audio/totalPeriodsOneNote_reg[27]'
+INFO: [Synth 8-3886] merging instance 'audio/totalPeriodsOneNote_reg[27]' (FDRE) to 'audio/totalPeriodsOneNote_reg[28]'
+INFO: [Synth 8-3886] merging instance 'audio/totalPeriodsOneNote_reg[28]' (FDRE) to 'audio/totalPeriodsOneNote_reg[29]'
+INFO: [Synth 8-3886] merging instance 'audio/totalPeriodsOneNote_reg[29]' (FDRE) to 'audio/totalPeriodsOneNote_reg[30]'
+INFO: [Synth 8-3886] merging instance 'audio/totalPeriodsOneNote_reg[30]' (FDRE) to 'audio/totalPeriodsOneNote_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (audio/\totalPeriodsOneNote_reg[31] )
+INFO: [Synth 8-3886] merging instance 'audio/currentLength_reg[3]' (FDE) to 'audio/currentLength_reg[5]'
+INFO: [Synth 8-3886] merging instance 'audio/currentLength_reg[5]' (FDE) to 'audio/currentLength_reg[6]'
+INFO: [Synth 8-3886] merging instance 'audio/currentLength_reg[6]' (FDE) to 'audio/currentLength_reg[7]'
+INFO: [Synth 8-3886] merging instance 'audio/currentLength_reg[7]' (FDE) to 'audio/currentLength_reg[8]'
+INFO: [Synth 8-3886] merging instance 'audio/currentLength_reg[8]' (FDE) to 'audio/currentLength_reg[9]'
+INFO: [Synth 8-3886] merging instance 'audio/currentLength_reg[9]' (FDE) to 'audio/currentLength_reg[10]'
+INFO: [Synth 8-3886] merging instance 'audio/currentLength_reg[10]' (FDE) to 'audio/currentLength_reg[11]'
+INFO: [Synth 8-3886] merging instance 'audio/currentLength_reg[11]' (FDE) to 'audio/currentLength_reg[12]'
+INFO: [Synth 8-3886] merging instance 'audio/currentLength_reg[12]' (FDE) to 'audio/currentLength_reg[13]'
+INFO: [Synth 8-3886] merging instance 'audio/currentLength_reg[13]' (FDE) to 'audio/currentLength_reg[14]'
+INFO: [Synth 8-3886] merging instance 'audio/currentLength_reg[14]' (FDE) to 'audio/currentLength_reg[15]'
+INFO: [Synth 8-3886] merging instance 'audio/currentLength_reg[15]' (FDE) to 'audio/currentLength_reg[16]'
+INFO: [Synth 8-3886] merging instance 'audio/currentLength_reg[16]' (FDE) to 'audio/currentLength_reg[17]'
+INFO: [Synth 8-3886] merging instance 'audio/currentLength_reg[17]' (FDE) to 'audio/currentLength_reg[18]'
+INFO: [Synth 8-3886] merging instance 'audio/currentLength_reg[18]' (FDE) to 'audio/currentLength_reg[19]'
+INFO: [Synth 8-3886] merging instance 'audio/currentLength_reg[19]' (FDE) to 'audio/currentLength_reg[20]'
+INFO: [Synth 8-3886] merging instance 'audio/currentLength_reg[20]' (FDE) to 'audio/currentLength_reg[21]'
+INFO: [Synth 8-3886] merging instance 'audio/currentLength_reg[21]' (FDE) to 'audio/currentLength_reg[22]'
+INFO: [Synth 8-3886] merging instance 'audio/currentLength_reg[22]' (FDE) to 'audio/currentLength_reg[23]'
+INFO: [Synth 8-3886] merging instance 'audio/currentLength_reg[23]' (FDE) to 'audio/currentLength_reg[24]'
+INFO: [Synth 8-3886] merging instance 'audio/currentLength_reg[24]' (FDE) to 'audio/currentLength_reg[25]'
+INFO: [Synth 8-3886] merging instance 'audio/currentLength_reg[25]' (FDE) to 'audio/currentLength_reg[26]'
+INFO: [Synth 8-3886] merging instance 'audio/currentLength_reg[26]' (FDE) to 'audio/currentLength_reg[27]'
+INFO: [Synth 8-3886] merging instance 'audio/currentLength_reg[27]' (FDE) to 'audio/currentLength_reg[28]'
+INFO: [Synth 8-3886] merging instance 'audio/currentLength_reg[28]' (FDE) to 'audio/currentLength_reg[29]'
+INFO: [Synth 8-3886] merging instance 'audio/currentLength_reg[29]' (FDE) to 'audio/currentLength_reg[30]'
+INFO: [Synth 8-3886] merging instance 'audio/currentLength_reg[30]' (FDE) to 'audio/currentLength_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (audio/\currentLength_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (audio/\last_mode_reg[4] )
+INFO: [Synth 8-3886] merging instance 'audio/melody_reg[1]' (FDE) to 'audio/melody_reg[2]'
+INFO: [Synth 8-3886] merging instance 'audio/melody_reg[0]' (FDE) to 'audio/melody_reg[6]'
+INFO: [Synth 8-3886] merging instance 'audio/melody_reg[65]' (FDE) to 'audio/melody_reg[20]'
+INFO: [Synth 8-3886] merging instance 'audio/melody_reg[33]' (FDE) to 'audio/melody_reg[7]'
+INFO: [Synth 8-3886] merging instance 'audio/melody_reg[49]' (FDE) to 'audio/melody_reg[4]'
+INFO: [Synth 8-3886] merging instance 'audio/melody_reg[81]' (FDE) to 'audio/melody_reg[4]'
+INFO: [Synth 8-3886] merging instance 'audio/melody_reg[17]' (FDE) to 'audio/melody_reg[6]'
+INFO: [Synth 8-3886] merging instance 'audio/melody_reg[57]' (FDE) to 'audio/melody_reg[11]'
+INFO: [Synth 8-3886] merging instance 'audio/melody_reg[25]' (FDE) to 'audio/melody_reg[16]'
+INFO: [Synth 8-3886] merging instance 'audio/melody_reg[41]' (FDE) to 'audio/melody_reg[4]'
+INFO: [Synth 8-3886] merging instance 'audio/melody_reg[73]' (FDE) to 'audio/melody_reg[6]'
+INFO: [Synth 8-3886] merging instance 'audio/melody_reg[9]' (FDE) to 'audio/melody_reg[4]'
+INFO: [Synth 8-3886] merging instance 'audio/melody_reg[61]' (FDE) to 'audio/melody_reg[6]'
+INFO: [Synth 8-3886] merging instance 'audio/melody_reg[29]' (FDE) to 'audio/melody_reg[4]'
+INFO: [Synth 8-3886] merging instance 'audio/melody_reg[45]' (FDE) to 'audio/melody_reg[20]'
+INFO: [Synth 8-3886] merging instance 'audio/melody_reg[77]' (FDE) to 'audio/melody_reg[6]'
+INFO: [Synth 8-3886] merging instance 'audio/melody_reg[13]' (FDE) to 'audio/melody_reg[7]'
+INFO: [Synth 8-3886] merging instance 'audio/melody_reg[53]' (FDE) to 'audio/melody_reg[4]'
+INFO: [Synth 8-3886] merging instance 'audio/melody_reg[21]' (FDE) to 'audio/melody_reg[16]'
+INFO: [Synth 8-3886] merging instance 'audio/melody_reg[37]' (FDE) to 'audio/melody_reg[11]'
+INFO: [Synth 8-3886] merging instance 'audio/melody_reg[69]' (FDE) to 'audio/melody_reg[4]'
+INFO: [Synth 8-3886] merging instance 'audio/melody_reg[63]' (FDE) to 'audio/melody_reg[6]'
+INFO: [Synth 8-3886] merging instance 'audio/melody_reg[31]' (FDE) to 'audio/melody_reg[6]'
+INFO: [Synth 8-3886] merging instance 'audio/melody_reg[47]' (FDE) to 'audio/melody_reg[11]'
+INFO: [Synth 8-3886] merging instance 'audio/melody_reg[79]' (FDE) to 'audio/melody_reg[4]'
+INFO: [Synth 8-3886] merging instance 'audio/melody_reg[15]' (FDE) to 'audio/melody_reg[7]'
+INFO: [Synth 8-3886] merging instance 'audio/melody_reg[55]' (FDE) to 'audio/melody_reg[6]'
+INFO: [Synth 8-3886] merging instance 'audio/melody_reg[23]' (FDE) to 'audio/melody_reg[7]'
+INFO: [Synth 8-3886] merging instance 'audio/melody_reg[39]' (FDE) to 'audio/melody_reg[4]'
+INFO: [Synth 8-3886] merging instance 'audio/melody_reg[71]' (FDE) to 'audio/melody_reg[4]'
+INFO: [Synth 8-3886] merging instance 'audio/melody_reg[7]' (FDE) to 'audio/melody_reg[18]'
+INFO: [Synth 8-3886] merging instance 'audio/melody_reg[59]' (FDE) to 'audio/melody_reg[4]'
+INFO: [Synth 8-3886] merging instance 'audio/melody_reg[27]' (FDE) to 'audio/melody_reg[6]'
+INFO: [Synth 8-3886] merging instance 'audio/melody_reg[43]' (FDE) to 'audio/melody_reg[4]'
+INFO: [Synth 8-3886] merging instance 'audio/melody_reg[75]' (FDE) to 'audio/melody_reg[20]'
+INFO: [Synth 8-3886] merging instance 'audio/melody_reg[11]' (FDE) to 'audio/melody_reg[26]'
+INFO: [Synth 8-3886] merging instance 'audio/melody_reg[51]' (FDE) to 'audio/melody_reg[20]'
+INFO: [Synth 8-3886] merging instance 'audio/melody_reg[19]' (FDE) to 'audio/melody_reg[4]'
+INFO: [Synth 8-3886] merging instance 'audio/melody_reg[35]' (FDE) to 'audio/melody_reg[6]'
+INFO: [Synth 8-3886] merging instance 'audio/melody_reg[67]' (FDE) to 'audio/melody_reg[26]'
+INFO: [Synth 8-3886] merging instance 'audio/melody_reg[3]' (FDE) to 'audio/melody_reg[2]'
+INFO: [Synth 8-3886] merging instance 'audio/melody_reg[64]' (FDE) to 'audio/melody_reg[4]'
+INFO: [Synth 8-3886] merging instance 'audio/melody_reg[32]' (FDE) to 'audio/melody_reg[26]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (audio/\melody_reg[66] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (audio/\isSilence_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (enable_reg) is unused and will be removed from module clean_mode_counter.
+WARNING: [Synth 8-3332] Sequential element (enable_reg) is unused and will be removed from module three_Counter.
+WARNING: [Synth 8-3332] Sequential element (enable_reg) is unused and will be removed from module three_return_Counter.
+WARNING: [Synth 8-3332] Sequential element (uart_rx_i0/uart_rx_ctl_i0/frm_err_reg) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/insertIndex_reg[31]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/insertIndex_reg[30]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/insertIndex_reg[29]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/insertIndex_reg[28]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/insertIndex_reg[27]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/insertIndex_reg[26]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/insertIndex_reg[25]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/insertIndex_reg[24]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/insertIndex_reg[23]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/insertIndex_reg[22]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/insertIndex_reg[21]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/insertIndex_reg[20]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/insertIndex_reg[19]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/insertIndex_reg[18]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/insertIndex_reg[17]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/insertIndex_reg[16]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/insertIndex_reg[15]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/insertIndex_reg[14]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/insertIndex_reg[13]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/insertIndex_reg[12]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/insertIndex_reg[11]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/insertIndex_reg[10]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/insertIndex_reg[9]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/insertIndex_reg[8]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/insertIndex_reg[7]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/insertIndex_reg[6]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/send_resp_data_reg[15]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/send_resp_data_reg[14]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/send_resp_data_reg[13]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/send_resp_data_reg[12]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/send_resp_data_reg[11]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/send_resp_data_reg[10]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/send_resp_data_reg[9]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/send_resp_data_reg[8]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/send_resp_data_reg[7]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/send_resp_data_reg[6]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/send_resp_data_reg[5]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/send_resp_data_reg[4]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/send_resp_data_reg[3]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/send_resp_data_reg[2]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/send_resp_data_reg[1]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/send_resp_data_reg[0]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/arg_val_reg[35]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/arg_val_reg[34]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/arg_val_reg[33]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/arg_val_reg[32]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/arg_val_reg[23]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/arg_val_reg[22]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/arg_val_reg[21]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/arg_val_reg[20]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/arg_val_reg[11]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/arg_val_reg[10]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/arg_val_reg[9]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/arg_val_reg[8]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/arg_val_reg[7]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/arg_val_reg[6]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/arg_val_reg[5]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/arg_val_reg[4]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/arg_val_reg[3]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/arg_val_reg[2]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/arg_val_reg[1]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/arg_val_reg[0]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/mode_reg[4]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/mode_reg[3]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/mode_reg[2]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/mode_reg[1]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (cmd_parse_i0/mode_reg[0]) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (resp_gen_i0/to_bcd_i0/old_value_val_reg) is unused and will be removed from module bluetooth.
+WARNING: [Synth 8-3332] Sequential element (last_mode_reg[4]) is unused and will be removed from module audio.
+WARNING: [Synth 8-3332] Sequential element (totalPeriodsOneNote_reg[31]) is unused and will be removed from module audio.
+WARNING: [Synth 8-3332] Sequential element (totalPeriodsOneNote_reg[24]) is unused and will be removed from module audio.
+WARNING: [Synth 8-3332] Sequential element (currentLength_reg[31]) is unused and will be removed from module audio.
+WARNING: [Synth 8-3332] Sequential element (isSilence_reg[0]) is unused and will be removed from module audio.
+WARNING: [Synth 8-3332] Sequential element (melody_reg[66]) is unused and will be removed from module audio.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (clean_mode_counter0/c1/\seconds_reg[0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (three_Counter0/c2/\seconds_reg[2]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (three_Counter0/c2/\seconds_reg[3]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (three_return_Counter0/c2/\seconds_reg[2]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (three_return_Counter0/c2/\seconds_reg[3]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (clean_mode_counter0/c1/\seconds_reg[1]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (clean_mode_counter0/c1/\seconds_reg[2]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (clean_mode_counter0/c1/\seconds_reg[3]_LDC )
+WARNING: [Synth 8-3332] Sequential element (seconds_reg[5]_P) is unused and will be removed from module Counter__1.
+WARNING: [Synth 8-3332] Sequential element (seconds_reg[3]_LDC) is unused and will be removed from module Counter__1.
+WARNING: [Synth 8-3332] Sequential element (seconds_reg[3]_C) is unused and will be removed from module Counter__1.
+WARNING: [Synth 8-3332] Sequential element (seconds_reg[2]_LDC) is unused and will be removed from module Counter__1.
+WARNING: [Synth 8-3332] Sequential element (seconds_reg[2]_C) is unused and will be removed from module Counter__1.
+WARNING: [Synth 8-3332] Sequential element (seconds_reg[1]_LDC) is unused and will be removed from module Counter__1.
+WARNING: [Synth 8-3332] Sequential element (seconds_reg[1]_C) is unused and will be removed from module Counter__1.
+WARNING: [Synth 8-3332] Sequential element (seconds_reg[0]_LDC) is unused and will be removed from module Counter__1.
+WARNING: [Synth 8-3332] Sequential element (seconds_reg[0]_C) is unused and will be removed from module Counter__1.
+WARNING: [Synth 8-3332] Sequential element (seconds_reg[3]_LDC) is unused and will be removed from module Counter__2.
+WARNING: [Synth 8-3332] Sequential element (seconds_reg[3]_C) is unused and will be removed from module Counter__2.
+WARNING: [Synth 8-3332] Sequential element (seconds_reg[2]_LDC) is unused and will be removed from module Counter__2.
+WARNING: [Synth 8-3332] Sequential element (seconds_reg[2]_C) is unused and will be removed from module Counter__2.
+WARNING: [Synth 8-3332] Sequential element (seconds_reg[3]_LDC) is unused and will be removed from module Counter.
+WARNING: [Synth 8-3332] Sequential element (seconds_reg[3]_C) is unused and will be removed from module Counter.
+WARNING: [Synth 8-3332] Sequential element (seconds_reg[2]_LDC) is unused and will be removed from module Counter.
+WARNING: [Synth 8-3332] Sequential element (seconds_reg[2]_C) is unused and will be removed from module Counter.
+WARNING: [Synth 8-3332] Sequential element (seconds_reg[4]_P) is unused and will be removed from module Counter__1.
+WARNING: [Synth 8-3332] Sequential element (minutes_reg[5]_P) is unused and will be removed from module Counter__1.
+WARNING: [Synth 8-3332] Sequential element (minutes_reg[4]_P) is unused and will be removed from module Counter__1.
+WARNING: [Synth 8-3332] Sequential element (minutes_reg[3]_P) is unused and will be removed from module Counter__1.
+WARNING: [Synth 8-3332] Sequential element (minutes_reg[0]_P) is unused and will be removed from module Counter__1.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:27 . Memory (MB): peak = 749.535 ; gain = 507.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+---------------+---------------+----------------+
+|Module Name | RTL Object    | Depth x Width | Implemented As | 
++------------+---------------+---------------+----------------+
+|resp_gen    | char_fifo_din | 32x8          | LUT            | 
+|resp_gen    | char_fifo_din | 32x8          | LUT            | 
+|resp_gen    | char_fifo_din | 32x8          | LUT            | 
+|resp_gen    | char_fifo_din | 32x8          | LUT            | 
+|resp_gen    | char_fifo_din | 32x8          | LUT            | 
+|resp_gen    | char_fifo_din | 32x8          | LUT            | 
+|resp_gen    | char_fifo_din | 32x8          | LUT            | 
+|resp_gen    | char_fifo_din | 32x8          | LUT            | 
+|audio       | freq          | 32x32         | LUT            | 
+|resp_gen    | char_fifo_din | 32x8          | LUT            | 
+|resp_gen    | char_fifo_din | 32x8          | LUT            | 
+|resp_gen    | char_fifo_din | 32x8          | LUT            | 
+|resp_gen    | char_fifo_din | 32x8          | LUT            | 
+|resp_gen    | char_fifo_din | 32x8          | LUT            | 
+|resp_gen    | char_fifo_din | 32x8          | LUT            | 
+|audio       | freq          | 32x32         | LUT            | 
++------------+---------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping  Report (see note below)
++--------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name         | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|gesture_control_off | (A:0xf5e100)*B | 25     | 5      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gesture_control_on  | (A:0xf5e100)*B | 25     | 5      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++--------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'bluetooth0/clk_gen_i0/clk_core_i0/clk_out1' to pin 'bluetooth0/clk_gen_i0/clk_core_i0/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'bluetooth0/clk_gen_i0/clk_core_i0/clk_out2' to pin 'bluetooth0/clk_gen_i0/clk_core_i0/bbstub_clk_out2/O'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:36 . Memory (MB): peak = 810.176 ; gain = 567.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:37 . Memory (MB): peak = 841.574 ; gain = 599.109
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reminder0/seconds_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reminder0/minutes_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reminder0/hours_reg[5] )
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:38 . Memory (MB): peak = 891.719 ; gain = 649.254
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop three_return_Counter0/rst_signal_reg is being inverted and renamed to three_return_Counter0/rst_signal_reg_inv.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:39 . Memory (MB): peak = 891.719 ; gain = 649.254
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:39 . Memory (MB): peak = 891.719 ; gain = 649.254
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:39 . Memory (MB): peak = 891.719 ; gain = 649.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:39 . Memory (MB): peak = 891.719 ; gain = 649.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:39 . Memory (MB): peak = 891.719 ; gain = 649.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:39 . Memory (MB): peak = 891.719 ; gain = 649.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |char_fifo     |         1|
+|2     |clk_core      |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |char_fifo |     1|
+|2     |clk_core  |     1|
+|3     |BUFHCE    |     1|
+|4     |CARRY4    |   195|
+|5     |DSP48E1   |     2|
+|6     |LUT1      |   210|
+|7     |LUT2      |   486|
+|8     |LUT3      |   229|
+|9     |LUT4      |   219|
+|10    |LUT5      |   225|
+|11    |LUT6      |   418|
+|12    |MUXF7     |     3|
+|13    |FDCE      |   277|
+|14    |FDPE      |    18|
+|15    |FDRE      |   546|
+|16    |FDSE      |    21|
+|17    |LD        |    10|
+|18    |IBUF      |    19|
+|19    |OBUF      |    39|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------------------------------+---------------------+------+
+|      |Instance                         |Module               |Cells |
++------+---------------------------------+---------------------+------+
+|1     |top                              |                     |  2933|
+|2     |  audio                          |audio                |   475|
+|3     |  bluetooth0                     |bluetooth            |   621|
+|4     |    clk_gen_i0                   |clk_gen              |    46|
+|5     |      clk_div_i0                 |clk_div              |    41|
+|6     |    cmd_parse_i0                 |cmd_parse            |   227|
+|7     |    lb_ctl_i0                    |lb_ctl               |    71|
+|8     |      debouncer_i0               |debouncer            |    67|
+|9     |        meta_harden_signal_in_i0 |meta_harden_13       |     4|
+|10    |      meta_harden_rxd_i0         |meta_harden_12       |     3|
+|11    |    resp_gen_i0                  |resp_gen             |   103|
+|12    |    rst_gen_i0                   |rst_gen              |     4|
+|13    |      reset_bridge_clk_rx_i0     |reset_bridge         |     2|
+|14    |      reset_bridge_clk_tx_i0     |reset_bridge_11      |     2|
+|15    |    uart_rx_i0                   |uart_rx              |    95|
+|16    |      meta_harden_rxd_i0         |meta_harden          |     2|
+|17    |      uart_baud_gen_rx_i0        |uart_baud_gen_10     |    26|
+|18    |      uart_rx_ctl_i0             |uart_rx_ctl          |    67|
+|19    |    uart_tx_i0                   |uart_tx              |    59|
+|20    |      uart_baud_gen_tx_i0        |uart_baud_gen        |    27|
+|21    |      uart_tx_ctl_i0             |uart_tx_ctl          |    32|
+|22    |  bot0                           |bonetime             |     5|
+|23    |  bot1                           |bonetime_0           |    12|
+|24    |  bot2                           |bonetime_1           |     5|
+|25    |  bot3                           |bonetime_2           |     7|
+|26    |  bot4                           |bonetime_3           |     6|
+|27    |  clean_mode_counter0            |clean_mode_counter   |   127|
+|28    |    c1                           |Counter_9            |   126|
+|29    |  clock0                         |clock                |   149|
+|30    |  d0                             |debounce             |    66|
+|31    |  d1                             |debounce_4           |    66|
+|32    |  d2                             |debounce_5           |    66|
+|33    |  d3                             |debounce_6           |    66|
+|34    |  d4                             |debounce_7           |    66|
+|35    |  gesture_control_off0           |gesture_control_off  |   121|
+|36    |  gesture_control_on0            |gesture_control_on   |   121|
+|37    |  mode0                          |mode                 |   253|
+|38    |    oo1                          |on_off               |    94|
+|39    |  reminder0                      |reminder             |   140|
+|40    |  set_gesture_time0              |set_gesture_time     |    22|
+|41    |  set_reminder0                  |set_reminder         |   102|
+|42    |  show_number0                   |show_number          |   122|
+|43    |  three_Counter0                 |three_Counter        |   128|
+|44    |    c2                           |Counter_8            |   127|
+|45    |  three_return_Counter0          |three_return_Counter |   127|
+|46    |    c2                           |Counter              |   126|
++------+---------------------------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:39 . Memory (MB): peak = 891.719 ; gain = 649.254
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 236 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:34 . Memory (MB): peak = 891.719 ; gain = 305.359
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:39 . Memory (MB): peak = 891.719 ; gain = 649.254
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 229 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 10 instances were transformed.
+  LD => LDCE: 10 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+271 Infos, 209 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:43 . Memory (MB): peak = 891.719 ; gain = 660.781
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Alessandro Paschen/Downloads/project_final_no_update_counter_when_close/project_final/project_final.runs/synth_1/Top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_utilization_synth.rpt -pb Top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 891.719 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 20 15:16:00 2024...
